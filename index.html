@@ -21,6 +21,7 @@ function encode(){
     var output = output + num.toString();
   }
   document.getElementById("encodeRes").value = output;
+  document.getElementById("encode").value = "";
 }
 function decode(){
   var output = ""
@@ -31,6 +32,7 @@ function decode(){
     output = output + allChars[num]
   }
   document.getElementById("decodeRes").value = output;
+  document.getElementById("decode").value = "";
 }
 </script>
 </body>
