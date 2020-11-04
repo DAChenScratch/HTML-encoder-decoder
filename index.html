@@ -2,10 +2,13 @@
 <html>
 <body>
 <button onclick="encode()">Encode!</button>
+<br>
 <textarea id="encode" placeholder="Type something here to encode..."></textarea>
 <textarea id="encodeRes" placeholder="Encoded script will go out here..."></textarea>
 <br>
-<button onclick="decode'>Decode!</buttton>
+<br>
+<button onclick="decode()">Decode!</button>
+<br>
 <textarea id="decode" placeholder="Type something here to decode..."></textarea>
 <textarea id="decodeRes" placeholder="Decoded script will go out here..."></textarea>
 <script>
@@ -13,7 +16,7 @@ var allChars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%*()1234
 function encode(){
   var output = "";
   var what = document.getElementById("encode").value;
-  for (i=0;i<what.length<i++){
+  for (i=0;i<what.length;i++){
     num = allChars.indexOf(what[i]) + 10
     var output = output + num.toString();
   }
